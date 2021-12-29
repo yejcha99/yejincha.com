@@ -5,6 +5,15 @@
 body {
   font-family: 'Times New Roman', Times, serif;
 }
+
+img {
+  border-radius: 5%;
+}
+
+.container {
+  overflow: auto
+}
+
 /**************NavBar*****************/
 .logo {
   width: 5rem;
@@ -56,10 +65,11 @@ nav ul li {
 
 /****************Home***********************/
 #intro {
-  padding: 2% 3% 2% 1%;
+  padding: 2% 3% 3% 1%;
   color: rgb(43, 40, 5);
-  font-family: 'Quicksand', cursive;
-  background-color: #bea899;
+  /* font-family: 'Quicksand', cursive; */
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f9e7db;
 }
 
 .intro-header {
@@ -71,17 +81,24 @@ nav ul li {
   font-size: 4.7rem;
   font-weight: bolder;
   font-variant: small-caps;
-  margin-bottom: 13px;
-  margin-left: -1.5%;
+  margin-bottom: 2rem;
+  position: relative;
   max-height: 75px;
 }
 
 .intro-head-des {
   font-size: 29px;
+  padding-bottom: 8rem;
 }
 
 .main-intro-des {
   font-size: 1.15rem;
+  padding-bottom: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+.main-intro-des a {
+  text-decoration: none;
 }
 
 .intro-text {
@@ -93,6 +110,14 @@ nav ul li {
   color:black;
 }
 
+.code {
+  font-family: 'Quicksand', cursive;
+  font-size:1.5rem;
+  letter-spacing: 0.1rem;
+  color:#1c7a5e;
+  font-variant: small-caps;
+}
+
 .typed-text {
   padding-left:0.6rem;
 }
@@ -101,8 +126,167 @@ nav ul li {
   .intro-header {
     font-size: 3rem;
   }
-  .main-intro-des {
-    font-size: 0.75rem;
-  }
+}
 
+/***************Social media**********/
+.social a {
+  color: #ffffff;
+  font-size: 32px !important;
+  width: 26px;
+  height: 18px;
+  display: inline-block;
+}
+
+.social a:hover {
+  transition: all ease 0.3s;
+  opacity: 0.5;
+}
+
+/**************arrow****************/
+.downArrow{
+	position: relative;
+	bottom: 0;
+	left: 50%;
+}
+
+.bounce {
+	-moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/*****************about*****************/
+#profile-images {
+  position: relative;
+	width: 35%;
+	margin-left: 0px;
+	padding-right: 10px;
+	z-index: -99;
+}
+
+.profile {
+	float: left;
+	width: 100%;
+  margin-bottom: 5rem;
+}
+
+.about-container {
+	margin: 5%;	
+	margin-bottom: 10px;
+  display:flexbox;
+}
+
+#about-description {
+	position: relative;
+	float: right;
+	width: 55%;
+}
+
+.about-me-title {
+  margin-left: 45%;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+  font-family: 'Quicksand', cursive;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.resume {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #222a35;
+  padding: 2%;
+  position: relative;
+  bottom: 10px;
+}
+
+.resume-button:hover {
+  color: #222a35;
+  text-decoration:dashed;
+  background-color: #f9e7db;
+}
+
+.resume-frame:hover {
+  background-color: #f9e7db;
+}
+
+.resume-frame {
+  margin-top: 25px;
+  width: 200px;
+  height: 55px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgb(0 0 0 / 10%);
+  overflow: hidden;
+  background-color:#bea899;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.resume-button {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/**************skills***************/
+#skills {
+  background-color:#f9e7db;
 }
