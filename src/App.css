@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
 
 body {
   font-family: 'Times New Roman', Times, serif;
@@ -38,4 +40,55 @@ nav ul li {
 
 .navbar-custom {
   background-color: #bea899;
+}
+
+.navbar-brand {
+  padding-left: 2%;
+  position: absolute;
+  font-size:1.5rem;
+  top: 4;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: olive;
+}
+
+/****************Home***********************/
+#intro {
+  padding: 2% 3% 2% 1%;
+  color: rgb(43, 40, 5);
+  font-family: 'Quicksand', cursive;
+  background-color: #bea899;
+}
+
+.intro-header {
+  /* font-family: 'Frank Ruhl Libre', serif; */
+  /* font-family: 'Quicksand', cursive; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(68, 71, 26);
+  font-size: 4.7rem;
+  font-weight: bolder;
+  font-variant: small-caps;
+  margin-bottom: 10px;
+  margin-left: -0.5%;
+  max-height: 75px;
+}
+
+.intro-head-des {
+  font-size: 30px;
+}
+
+.main-intro-des {
+  font-size: 1.15rem;
+}
+
+.intro-text {
+  margin-top: 140px;
+}
+
+.highlight {
+  font-weight:bolder;
+  color:black;
 }
