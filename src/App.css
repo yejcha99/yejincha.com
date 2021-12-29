@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
 
 body {
-  font-family: 'Lancelot', cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 /**************NavBar*****************/
 .logo {
@@ -18,19 +18,24 @@ nav a.nav-link {
 
 nav ul li {
   text-transform: uppercase;
+  font-family: 'Quicksand', cursive;
 }
 
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: black !important;
+  color: white !important;
   border-top: 0.1875rem solid rgba(255,255,255,0);
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid rgb(191, 139, 191)
+  border-top: 0.1875rem solid yellow
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid rgb(191, 139, 191);
+  border-top: 0.1875rem solid yellow;
+}
+
+.navbar-custom {
+  background-color: #bea899;
 }
