@@ -44,7 +44,7 @@ nav ul li {
 
 .navbar-brand {
   padding-left: 2%;
-  position: absolute;
+  position: relative;
   font-size:1.5rem;
   top: 4;
   color: white;
@@ -71,13 +71,13 @@ nav ul li {
   font-size: 4.7rem;
   font-weight: bolder;
   font-variant: small-caps;
-  margin-bottom: 10px;
-  margin-left: -0.5%;
+  margin-bottom: 13px;
+  margin-left: -1.5%;
   max-height: 75px;
 }
 
 .intro-head-des {
-  font-size: 30px;
+  font-size: 29px;
 }
 
 .main-intro-des {
@@ -91,4 +91,18 @@ nav ul li {
 .highlight {
   font-weight:bolder;
   color:black;
+}
+
+.typed-text {
+  padding-left:0.6rem;
+}
+
+@media(max-width: 768px) {
+  .intro-header {
+    font-size: 3rem;
+  }
+  .main-intro-des {
+    font-size: 0.75rem;
+  }
+
 }
