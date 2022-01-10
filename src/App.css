@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lancelot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
-
-body {
-  font-family: 'Times New Roman', Times, serif;
-}
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 img {
   border-radius: 5%;
@@ -12,6 +11,15 @@ img {
 
 .container {
   overflow: auto
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 1.5rem;
 }
 
 /**************NavBar*****************/
@@ -29,7 +37,7 @@ nav a.nav-link {
 
 nav ul li {
   text-transform: uppercase;
-  font-family: 'Quicksand', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-nav > li > a {
@@ -65,7 +73,7 @@ nav ul li {
 
 /****************Home***********************/
 #intro {
-  padding: 2% 3% 3% 1%;
+  padding: 2% 3% 3% 3%;
   color: rgb(43, 40, 5);
   /* font-family: 'Quicksand', cursive; */
   font-family: 'Courier New', Courier, monospace;
@@ -76,7 +84,7 @@ nav ul li {
   /* font-family: 'Frank Ruhl Libre', serif; */
   /* font-family: 'Quicksand', cursive; */
   /* font-family: 'Times New Roman', Times, serif; */
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(68, 71, 26);
   font-size: 4.7rem;
   font-weight: bolder;
@@ -84,11 +92,13 @@ nav ul li {
   margin-bottom: 2rem;
   position: relative;
   max-height: 75px;
+  text-align: center;
 }
 
 .intro-head-des {
   font-size: 29px;
   padding-bottom: 8rem;
+  text-align: center;
 }
 
 .main-intro-des {
@@ -129,24 +139,32 @@ nav ul li {
 }
 
 /***************Social media**********/
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 1.2rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
 .social a {
-  color: #ffffff;
+  color:rgb(68, 71, 26);
   font-size: 32px !important;
-  width: 26px;
-  height: 18px;
-  display: inline-block;
+  margin-right: 1rem;
 }
 
 .social a:hover {
   transition: all ease 0.3s;
   opacity: 0.5;
+  color: #222a35;
 }
 
 /**************arrow****************/
 .downArrow{
 	position: relative;
 	bottom: 0;
-	left: 50%;
+	text-align: center;
 }
 
 .bounce {
@@ -226,17 +244,29 @@ nav ul li {
 
 #about-description {
 	position: relative;
+  font-family: 'Montserrat', sans-serif;
 	float: right;
 	width: 55%;
 }
 
 .about-me-title {
-  margin-left: 45%;
+  text-align: center;
   padding-bottom: 0.5rem;
   padding-top: 2rem;
-  font-family: 'Quicksand', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
+  font-variant: small-caps;
+}
+
+.about-me-small-title {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.05rem;
 }
 
 .resume {
@@ -286,7 +316,159 @@ nav ul li {
     justify-content: center;
     cursor: pointer;
 }
+.course {
+  font-size: 1.2rem;
+}
+
+.institution {
+  font-size: 1rem;
+  color: rgba(0,0,0,0.6);
+}
+
+.edu-logo {
+  margin-left: -3rem;
+}
+
+.description {
+  margin-top:-1.7rem;
+}
+
 /**************skills***************/
 #skills {
+  background-color:#f9e7db;
+}
+
+/*=----- Work Experence Section-----*/
+/*- Screen Sizes*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.wrapper {
+  margin: 3.125em auto;
+  padding: 1em 5em 1em;
+  max-width: 1000px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.timeline {
+  line-height: 1.5em;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  position: relative;
+  counter-reset: section;
+  color:#f9e7db
+}
+.timeline:before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background: #bea899;
+  position: absolute;
+  top: 0;
+  left: -3.313em;
+  border-radius: 40px 40px;
+}
+
+.timeline--entry {
+  position: relative;
+  background-color: #eeeeee;
+}
+.timeline--entry__title {
+  color: rgba(32, 32, 32, 0.904);
+  background-color: #f9e7db;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 1em;
+}
+.timeline--entry__title:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -1em;
+  border-right: 10px solid #ec407a;
+}
+.timeline--entry__detail {
+  background-color: #ffe6e6f9;
+  color: black;
+  padding: 1em;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.timeline--entry:before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  counter-increment: section;
+  left: -4.5em;
+}
+
+@supports (display: grid) {
+  @media (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-gap: 4.75em;
+      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
+    }
+    .timeline:before {
+      left: 49.5%;
+    }
+
+    .timeline--entry:nth-child(1) {
+      grid-area: entry1;
+    }
+    .timeline--entry:nth-child(2) {
+      grid-area: entry2;
+    }
+    .timeline--entry:nth-child(3) {
+      grid-area: entry3;
+    }
+    .timeline--entry:nth-child(4) {
+      grid-area: entry4;
+    }
+    .timeline--entry:nth-child(5) {
+      grid-area: entry5;
+    }
+    .timeline--entry:nth-of-type(odd):before {
+      left: -3.8em;
+    }
+    .timeline--entry:nth-of-type(even):not(:nth-of-type(odd)) .timeline--entry__title:before {
+      left: 100%;
+      border-left: 10px solid #ec407a;
+      border-right: 0;
+    }
+    .timeline--entry:nth-of-type(even):before {
+      left: 103%;
+    }
+  }
+}
+
+/**************Projects***************/
+#Projects {
   background-color:#f9e7db;
 }

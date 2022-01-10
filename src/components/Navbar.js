@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-custom">
+        <nav className="navbar navbar-expand-lg navbar-custom navbar-fixed">
             <a className="navbar-brand" href="#">YC</a>
             <div className="container">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,16 +14,16 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
+                        <a className="nav-link" href="#about">About</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Projects</a>
+                        <a className="nav-link" href="#Experiences">Experiences</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Experiences</a>
+                        <a className="nav-link" href="#Projects">Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Resume</a>
+                        <a className="nav-link" href="Yejin_Resume.pdf" target="_blank">Resume</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Life</a>

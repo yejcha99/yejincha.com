@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <section id="intro">
-                <div className='container'>
+                <div className='container-intro'>
                     <div class="intro-text">
                         <h1 class="intro-header">Yejin Cha</h1>
                         <h2 class="intro-head-des">
@@ -18,14 +18,14 @@ const Home = () => {
                                 loop /></h2>
                     </div>
                     <div className="social">
-                        <a class="linkedin-icon" href="https://in.linkedin.com/in/viandjianto">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <a className="linkedin-icon item" href="https://in.linkedin.com/in/yejincha">
+                            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                         </a>
-                        <a class="github-icon" href="https://www.github.com/yejcha99">
-                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <a className="github-icon item" href="https://www.github.com/yejcha99">
+                        <i className="fa fa-github" aria-hidden="true"></i>
                         </a>
-                        <a class="email-icon" href="mailto:yejincha@seas.upenn.edu">
-                            <i class="far fa-envelope" aria-hidden="true"></i>
+                        <a className="email-icon item" href="mailto:yejincha@seas.upenn.edu">
+                            <i className="fa fa-envelope" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="downArrow bounce">
@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </section>
             {/***********About me**********/}
-            <section id="about-me">
+            <section id="about">
                 <div className="container">
                 <h3 className='about-me-title'>About me</h3>
                 <div className="about-container">
@@ -45,11 +45,47 @@ const Home = () => {
                     </div>
                     <div id="about-description">
                         <div class="main-intro-des">
-                            <span className='code'>Hello!</span> <br />
+                            <span className='code'>Hello! I am Yejin (pronounced Yay-Gin)</span> <br />
                                 I am a Master's student pursuing Computer and Information Science at the <span class="highlight">University of Pennsylvania.</span> <br />
                                 I got my B.A. in Computer Science at Colgate University in May 2021. <br />
-                            <br />
-                                I am interested in <span class="highlight"> data science, web/app development, and AI!</span><br />
+                                During my undergraduate years, I've worked as a research fellow in Bioinformatics project. <br />
+                                Outside of school, I enjoy dancing and taking photos. <br />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <h3 className='about-me-small-title'>Interests</h3>
+                                        <ul class="ul-interests">
+
+                                            <li>Web/App Development</li>
+
+                                            <li>Data Science</li>
+
+                                            <li>Machine Learning</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h3 className='about-me-small-title'>Education</h3>
+                                        <ul class="fa-ul">
+                                            <li>
+                                                <i class="fa fa-graduation-cap edu-logo" />
+                                                <div class="description">
+                                                    <p class="course">MSE in CIS, '2023</p>
+                                                    <p class="institution">University of Pennsylvania</p>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-graduation-cap edu-logo" />
+                                                <div class="description">
+                                                    <p class="course">BA in Computer Science, 2021</p>
+                                                    <p class="institution">Colgate University</p>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
                             <br />
                             <a href="Yejin_Resume.pdf" target="_blank">
                                 <div class="resume-frame">
@@ -66,13 +102,35 @@ const Home = () => {
             {/***********Skills**********/}
             <section id="skills">
                 <div class="skill-section">
-                <h3 className='about-me-title'>Skills</h3>
-                    <div className="container">
-                        <div className="skill-box">
-                            <div class="skill-title">
-                                <div class="img">
-                                    <img src="img/html.png" />
-                                </div>
+                    <h3 className='about-me-title'>Skills</h3>
+                    <div className='container'>
+                        <div class="flex-container">
+                            <div class="item">
+                                <h3 className='about-me-small-title'>Python</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>Java</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>HTML</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>CSS</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>Javascript</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>MATLAB</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>React</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>MongoDB</h3>
+                            </div>
+                            <div class="item">
+                                <h3 className='about-me-small-title'>Node.js</h3>
                             </div>
                         </div>
                     </div>
@@ -81,14 +139,30 @@ const Home = () => {
             {/***********Experiences**********/}
             <section id="Experiences">
                 <div class="skill-section">
-                <h3 className='about-me-title'>Experiences</h3>
-                    <div className="container">
-                        <div className="skill-box">
-                            <div class="skill-title">
-                                <div class="img">
-                                    <img src="img/html.png" />
-                                </div>
-                            </div>
+                    <h3 className='about-me-title'>Experience</h3>
+                    <div class="wrapper">
+                        <div class="timeline">
+                            <dl class="timeline--entry">
+                                <dt class="timeline--entry__title">September 2021</dt>
+                                <dd class="timeline--entry__detail">Started CIS Masters program @ UPenn!</dd>
+                            </dl>
+                            <dl class="timeline--entry">
+                                <dt class="timeline--entry__title">May 2021</dt>
+                                <dd class="timeline--entry__detail"> Graduated from Colgate University with a BA in CS and minor in Mathematical Systems Biology. Magna Cum Laude and Honors in CS :)</dd>
+                            </dl>
+                            <dl class="timeline--entry">
+                                <dt class="timeline--entry__title">May 2020 - August 2021</dt>
+                                <dd class="timeline--entry__detail">Worked on a Bioinformatics Research Project <i>Modeling Circadian Clock to Display Link Between SNPs and SAD</i> with Dr. Ahmet Ay and Dr. Krista Ingram. Paper has been submitted to the Journal of Affective Disorder and now is under review.</dd>
+                            </dl>
+                            <dl class="timeline--entry">
+                                <dt class="timeline--entry__title">July 2020</dt>
+                                <dd class="timeline--entry__detail">Co-founded <i>SkinEd</i>, a data-based online educational resource that provides easy access to information on
+different skincare ingredients to educate customers and increase transparency in the cosmetic industry.</dd>
+                            </dl>
+                            <dl class="timeline--entry">
+                                <dt class="timeline--entry__title">May 2019 - August 2019</dt>
+                                <dd class="timeline--entry__detail">Research Fellow for <i>Measurements of primary biological aerosol in Upstate NY</i> under the guidance of Dr. Anne Perring.</dd>
+                            </dl>
                         </div>
                     </div>
                 </div>
@@ -101,7 +175,7 @@ const Home = () => {
                         <div className="skill-box">
                             <div class="skill-title">
                                 <div class="img">
-                                    <img src="img/html.png" />
+                                    <img src="img/html.png" alt='html'/>
                                 </div>
                             </div>
                         </div>
