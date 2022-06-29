@@ -6,10 +6,6 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
-img {
-  border-radius: 5%;
-}
-
 .container {
   overflow: auto;
 }
@@ -31,9 +27,16 @@ img {
 
 /**************Links******************/
 .navbar {
-    position: -webkit-sticky;
+    position: fixed;
     position: sticky;
     top: 0;
+}
+
+.nav-item {
+  display: inline-block;
+line-height: 30px;
+margin: 0;
+position: relative;
 }
 
 nav a.nav-link {
@@ -42,29 +45,31 @@ nav a.nav-link {
   cursor: pointer;
 }
 
+.nav-link {
+  color: black;
+}
+
 nav ul li {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-nav > li > a {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-  color: black !important;
-  border-top: 0.1875rem solid rgba(255,255,255,0);
-}
-
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid yellow
+  border-top: 0.1875rem solid rgb(224, 188, 223)
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid yellow;
+  border-top: 0.1875rem solid rgb(224, 188, 223);
 }
 
 .navbar-custom {
-  background-color: #ecfde7;
-  border: 1rem solid #ecfde7;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: black;
 }
 
 .navbar-brand {
@@ -76,16 +81,16 @@ nav ul li {
 }
 
 .navbar-brand:hover {
-  color: olive;
+  color: rgb(224, 188, 223);
 }
 
 /****************Home***********************/
 #intro {
-  padding: 2% 3% 3% 3%;
   color: rgb(43, 40, 5);
-  /* font-family: 'Quicksand', cursive; */
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #ecfde7;
 }
 
 .intro-header {
@@ -146,6 +151,15 @@ nav ul li {
   }
 }
 
+.home-image {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 50px solid #fff;
+}
+
 /***************Social media**********/
 .social {
   display: flex;
@@ -166,67 +180,6 @@ nav ul li {
   transition: all ease 0.3s;
   opacity: 0.5;
   color: #222a35;
-}
-
-/**************arrow****************/
-.downArrow{
-	position: relative;
-	bottom: 0;
-	text-align: center;
-}
-
-.bounce {
-	-moz-animation: bounce 3s infinite;
-	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
-}
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
 }
 
 /*****************about*****************/
@@ -519,7 +472,6 @@ h1 {
   text-align: center;
   padding-top: 6rem;
   padding-bottom: 1rem;
-  background-color: #ecfde7;
 }
 
 /**********life*********/

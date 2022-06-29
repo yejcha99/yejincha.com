@@ -6,14 +6,15 @@ import "../App.css";
 
 const Navbar = () => {
     return (
-        <div className="navbar navbar-expand-lg navbar-custom navbar-fixed">
+        
+        <div className="navbar navbar-expand-lg navbar-custom">
             <a className="navbar-brand" href="/">YC</a>
             <div className="container">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <FontAwesomeIcon icon={faBars} style={{color: 'black'}}/>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav ms-auto">
+                <ul className="navbar-nav">
                     <li className="nav-item">
                         <a className="nav-link" href="/about">About</a>
                     </li>
